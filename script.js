@@ -59,7 +59,15 @@ function checkWinner() {
 
         if (position1 != "" && position2 != "" && position3 != "") {
             if (position1 === position2 && position2 === position3) {
-                showWinner(position1);
+
+                for (let box of boxes) {
+                    box.disabled = true;
+                }
+
+                setTimeout(() => {
+                    showWinner(position1);
+                }, 500);
+                // showWinner(position1);
                 return true;
             }
         }
