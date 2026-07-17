@@ -18,6 +18,7 @@ A simple, responsive Tic-Tac-Toe game built using **HTML, CSS, and JavaScript**.
 - 🏆 Automatic winner detection
 - 🤝 Draw detection
 - 🔄 Reset Game button
+- 🎉 Winning animations
 - 📱 Responsive design
 - ⚡ Fast and lightweight
 - 🎨 Clean and user-friendly interface
