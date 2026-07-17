@@ -46,6 +46,7 @@ boxes.forEach((box) => {
 
 function showWinner(winner) {
     message.innerText = `Congratulations! \n\nWinner is ${winner}`;
+    celebrateWinner();
     message.classList.remove("hide");
     main.classList.add("hide");
 }
@@ -64,6 +65,49 @@ function checkWinner() {
         }
     }
     return false;
+}
+
+function celebrateWinner() {
+
+    confetti({//left top
+        particleCount: 180,
+        angle: 330,
+        spread: 150,
+        origin: {
+            x: 0,
+            y: 0
+        }
+    });
+
+    confetti({//left bottom
+        particleCount: 180,
+        angle: 60,
+        spread: 150,
+        origin: {
+            x: 0,
+            y: 1
+        }
+    });
+
+    confetti({//right top
+        particleCount: 180,
+        angle: 230,
+        spread: 150,
+        origin: {
+            x: 1,
+            y: 0
+        }
+    });
+
+    confetti({//right bottom
+        particleCount: 180,
+        angle: 150,
+        spread: 150,
+        origin: {
+            x: 1,
+            y: 1
+        }
+    });
 }
 
 function Reset() {
